@@ -1,0 +1,741 @@
+/*  --------------------------- fonts --------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/*  ---------------------------- root ---------------------------- */
+
+:root {
+    --themeToggle: #fff8e0;
+    --onThemeToggle: black;
+    --secondary: #f04438;
+    --onSecondary: white;
+    --secondaryVariant: #29304e;
+    --surface: #f8faff;
+    --onSurface: #282e4e;
+    --background: white;
+    --onBackground: #282e4e;
+}
+
+[data-theme="dark"] {
+    --themeToggle: rgb(140, 140, 140);
+    --onThemeToggle: black;
+    --secondary: #03dac6;
+    --onSecondary: white;
+    --secondaryVariant: #03dac6;
+    --surface: #424242;
+    --onSurface: white;
+    --background: #212121;
+    --onBackground: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url(../images/bg.png);
+    background-color: var(--background);
+    background-size: 100%;
+    margin: 0;
+}
+
+img {
+    object-fit: contain;
+}
+
+h1 {
+    color: var(--onBackground);
+    font-weight: 800;
+    font-size: 66px;
+    line-height: inherit;
+    margin: 16px 0 24px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 16px auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+}
+
+.col {
+    flex: auto;
+    width: 50%;
+    margin-bottom: 8%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.row-three {
+    display: flex;
+    flex-flow: row;
+    margin: auto 10%;
+}
+
+.col-three {
+    flex: auto;
+    width: 20%;
+    margin-right: 4%;
+}
+
+.col-three img {
+    width: 50px;
+    height: 50px;
+}
+
+.col-three h3 {
+    color: var(--onBackground);
+    margin: 0px;
+    margin-block-end: 20px;
+    padding: 0 30px;
+}
+
+.col-three span {
+    margin-bottom: -16%;
+    font-size: 58px;
+    color: var(--secondary);
+    opacity: 0.15;
+    display: block;
+    font-weight: 900;
+}
+
+.col-three p {
+    text-align: center;
+}
+
+p,
+li {
+    color: var(--onBackground);
+    font-weight: 600;
+    font-size: small;
+    line-height: inherit;
+    text-align: justify;
+}
+
+.highlight {
+    display: inline;
+    background-color: var(--secondary);
+    color: var(--onSecondary);
+    padding: 4px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 66px;
+}
+
+a.fill-btn {
+    background: var(--secondary);
+    color: var(--onSecondary);
+    width: 138px;
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    border-radius: 24px;
+}
+
+.title-highlight-red {
+    background-color: var(--secondary);
+    color: var(--onSecondary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+
+.title-highlight-blue {
+    background-color: var(--secondaryVariant);
+    color: var(--onSecondary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+
+.subheading {
+    color: var(--onBackground);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: inherit;
+}
+
+b {
+    color: var(--onBackground);
+}
+
+.number-stat {
+    display: inline;
+}
+
+.number-stat span {
+    font-size: x-large;
+    font-weight: 700;
+    padding-left: 8px;
+    color: var(--secondary);
+}
+
+.number-stat p {
+    display: inline;
+    margin: 0;
+}
+
+a,
+a:hover {
+    color: var(--onBackground);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.active {
+    color: var(--secondary);
+}
+
+a.close-btn {
+    text-align: right;
+    font-size: 3rem;
+    padding: 0px 16px;
+}
+
+.inlineHighlight {
+    color: var(--secondary);
+    display: inline;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--onBackground);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: inherit;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.data-info {
+    margin-left: 16%;
+    color: var(--onBackground);
+    border-left: var(--onBackground) 3px solid;
+    height: 162px;
+}
+
+.data-info ::marker {
+    color: var(--onBackground);
+}
+
+.data-info span {
+    font-size: x-large;
+    vertical-align: bottom;
+}
+
+.data-info ul {
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 0 50px;
+    list-style-type: "------------";
+    text-align: left;
+    line-height: 64px;
+}
+
+.total-cases {
+    width: 50%;
+    padding: 8px 16px;
+    background-color: var(--secondary);
+    border-radius: 120px;
+    color: var(--onSecondary);
+    font-size: xx-large;
+}
+
+.total-cases span {
+    font-weight: 900;
+}
+
+.total-cases p {
+    font-weight: 400;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--onSecondary);
+}
+
+
+/*  -------------------------- Nav-Bar -------------------------- */
+
+#overview {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.nav {
+    flex: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    font-size: smaller;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 0 2rem;
+    padding: 1.2rem 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav span {
+    color: var(--secondary);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: var(--secondary);
+    transition: 0.5s;
+}
+
+.side-nav a {
+    color: var(--onBackground);
+}
+
+.side-nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.side-nav li {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.logo img {
+    width: 120px;
+}
+
+
+/*  --------------------- transmission --------------------- */
+
+section.transmission {
+    background-color: var(--surface);
+    margin-bottom: 8%;
+    text-align: center;
+    padding: 4%;
+}
+
+section.transmission h1 {
+    font-size: xx-large;
+}
+
+
+/*  ------------------------ Section-Theme ------------------------ */
+
+section.theme i {
+    font-size: xx-large;
+    color: var(--onThemeToggle);
+    cursor: pointer;
+}
+
+section.theme div {
+    position: fixed;
+    margin-top: 48px;
+    background-color: var(--themeToggle);
+    top: 120px;
+    border-radius: 25px;
+    border: 2px solid var(--onThemeToggle);
+    margin-left: -16px;
+    padding: 0px 2px 0px 17px;
+}
+
+section.theme div:hover {
+    padding-left: 36px;
+}
+
+
+/*  ------------------------ Section-Home ------------------------ */
+
+section.home {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+
+section.home a:hover {
+    color: var(--onSecondary);
+}
+
+section.home img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+section.home h4 {
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0;
+}
+
+
+/*  ----------------------- Section-About ----------------------- */
+
+section.about {
+    padding-top: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content {
+    color: var(--onBackground);
+    margin-right: 14%;
+}
+
+.statics {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 8%;
+}
+
+.virus {
+    display: flex;
+    margin-left: 48%;
+    margin-bottom: -6%;
+}
+
+.virus img {
+    width: 35px;
+}
+
+
+/*  ---------------------- section-symptoms ---------------------- */
+
+section.symptoms {
+    width: 80%;
+    padding-top: 1%;
+    margin: 0 auto;
+    display: block;
+}
+
+section.symptoms .subheading {
+    text-align: center;
+}
+
+section.symptoms img {
+    width: 80%;
+}
+
+section.symptoms ::marker {
+    color: var(--secondary);
+}
+
+
+/*  ---------------------- section-protect ---------------------- */
+
+section.protect {
+    width: 80%;
+    padding-top: 1%;
+    margin: 0 auto;
+    display: block;
+}
+
+section.protect h2 {
+    text-align: center;
+}
+
+section.protect h3 {
+    color: var(--onBackground);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: inherit;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+section.protect ::marker {
+    color: var(--secondary);
+}
+
+.protect-right-img {
+    width: 80%;
+    padding-left: 24%;
+}
+
+.protect-left-img {
+    width: 45%;
+    padding-right: 16%;
+}
+
+[data-theme="dark"] #symptoms-trans {
+    background-image: url(../images/dark_virus_shadow.png);
+}
+
+#symptoms-trans {
+    background-image: url(../images/light_virus_shadow.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+
+
+/*  ------------------------ section-new ------------------------ */
+
+section.new {
+    width: 80%;
+    padding-top: 1%;
+    margin: 0 auto;
+    display: block;
+}
+
+section.new h2 {
+    text-align: center;
+}
+
+.new-img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.new .statics {
+    margin-left: 8%;
+}
+
+.mainLink {
+    color: var(--secondaryVariant);
+}
+
+section.new .total-cases {
+    background-color: var(--secondaryVariant);
+}
+
+section.new .data-info {
+    margin-left: 3%;
+    margin-top: -5%;
+}
+
+section.new .data-info ul {
+    color: var(--secondary);
+}
+
+
+/*  ------------------ screen max-width: 1200px ------------------ */
+
+@media screen and (max-width: 1200px) {
+    .main-nav ul li {
+        padding: 10px 0;
+        margin: 0 1rem;
+    }
+    h2,
+    .highlight {
+        font-size: 50px;
+    }
+    section.covid-tools {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+/*  ------------------ screen max-width: 993px ------------------ */
+
+@media screen and (max-width: 993px) {
+    section.home {
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.home h1 {
+        font-size: 50px;
+    }
+    section.home img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nav-bar {
+        margin: 0;
+    }
+    h2,
+    .highlight {
+        font-size: 40px;
+    }
+    .row,
+    .row-three {
+        flex-flow: row;
+    }
+    .col-three {
+        width: 100%;
+    }
+    .col-three span {
+        margin-bottom: -16%;
+    }
+    .col {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .subheading {
+        font-size: xx-large;
+    }
+    .virus {
+        display: block;
+        text-align: end;
+        margin-bottom: -9%;
+    }
+    .total-cases {
+        width: 100%;
+        padding: 0;
+    }
+    .data-info {
+        height: unset;
+    }
+    .data-info ul {
+        line-height: unset;
+    }
+    .number-stat p {
+        display: block;
+    }
+    #symptoms-trans {
+        background-size: 75%;
+        background-position: center;
+    }
+    section.protect h3 {
+        font-size: 20px;
+    }
+    .protect-left-img,
+    .protect-right-img,
+    .section.new img,
+    section.symptoms img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .virus img {
+        height: auto;
+    }
+    section.new .data-info {
+        margin-left: 10%;
+        margin-top: 0;
+    }
+    .main-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        text-align: right;
+    }
+    .nav-bar {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section.transmission .row-three {
+        flex-flow: column;
+    }
+    section.transmission .col-three {
+        width: 100%;
+    }
+    section.transmission .col-three span {
+        margin-bottom: -9%;
+    }
+    section.transmission .col {
+        width: 100%;
+    }
+}
+
+
+/*  ------------------ screen max-width: 426px ------------------ */
+
+@media screen and (max-width: 426px) {
+    section.home,
+    .section.new {
+        margin: 8% auto;
+    }
+    section.home h1 {
+        font-size: 50px;
+    }
+    section.home img {
+        width: 100%;
+    }
+    .nav-bar {
+        margin: 0;
+    }
+    h2,
+    .highlight {
+        font-size: 40px;
+    }
+    .row,
+    .row-three {
+        flex-flow: column;
+    }
+    .col-three {
+        width: 100%;
+    }
+    .col-three span {
+        margin-bottom: -16%;
+    }
+    .col {
+        width: 100%;
+    }
+    .subheading {
+        font-size: xx-large;
+    }
+    .virus {
+        display: block;
+        text-align: end;
+        margin-bottom: -9%;
+    }
+    .total-cases {
+        width: 100%;
+        padding: 0;
+    }
+    .data-info {
+        height: unset;
+    }
+    .data-info ul {
+        line-height: unset;
+    }
+    .number-stat p {
+        display: block;
+    }
+    #symptoms-trans {
+        background-size: 75%;
+        background-position: center;
+    }
+    section.protect h3 {
+        font-size: 20px;
+    }
+    .protect-left-img,
+    .protect-right-img,
+    .section.new img,
+    section.symptoms img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .virus img {
+        height: auto;
+    }
+    section.new .data-info {
+        margin-left: 10%;
+        margin-top: 0;
+    }
+}
