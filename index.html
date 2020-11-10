@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html data-theme="">
+
+<head>
+    <title>Covid19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link id="#theme-link" rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+    <!-- fetch theme -->
+    <script>
+        initTheme();
+    </script>
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- -------------------------- Nav-Bar -------------------------- -->
+    <header id="overview">
+        <div class="container"></div>
+        <div class="nav-bar">
+
+            <!-- ---------------------------- Logo ---------------------------- -->
+            <div class="logo">
+                <a href="">
+                    <img id="logo-img" src="assets/images/light_logo.png">
+                </a>
+            </div>
+
+            <!-- ------------------------ main-nav-bar ------------------------ -->
+            <div class="nav">
+                <div class="main-nav">
+                    <ul>
+                        <li> <a href="index.html" class="main-link">Home</a></li>
+                        <li> <a href="#about-corona">About Corona</a></li>
+                        <li> <a href="#symptoms">Symptoms</a></li>
+                        <li> <a href="#protect-yourself">Protect Yourself</a></li>
+                        <li> <a href="#protect-others">Protect Others</a></li>
+                        <li> <a href="#new">New</a></li>
+                    </ul>
+                </div>
+
+                <!-- ----------------------- mobile-nav-bar ----------------------- -->
+                <div class="mobile-nav">
+                    <span onclick="openNav()">&#9776;</span>
+                    <div id="side-bar" class="side-nav">
+                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav();">&times;</a>
+                        <ul>
+                            <li> <a onclick="closeNav();" href="index.html">Home</a></li>
+                            <li> <a onclick="closeNav();" href="#about-corona">About Corona</a></li>
+                            <li> <a onclick="closeNav();" href="#symptoms">Symptoms</a></li>
+                            <li> <a onclick="closeNav();" href="#protect-yourself">Protect Yourself</a></li>
+                            <li> <a onclick="closeNav();" href="#protect-others">Protect Others</a></li>
+                            <li> <a onclick="closeNav();" href="#new">New</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- ----------------------- Theme Toggle ------------------------- -->
+    <section class="theme">
+        <a onclick="switchTheme()">
+            <div>
+                <i id="theme-icon" class="fa fa-sun-o" aria-hidden="true"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- ---------------------------- Home ---------------------------- -->
+    <section class="home">
+        <div class="container">
+            <div class="row">
+
+                <!-- ------------------------- home-image ------------------------- -->
+                <div style="position: relative;" class="col">
+                    <img id="home-image" src="assets/images/cough.png" alt="">
+                </div>
+
+                <!-- ------------------------ home-content ------------------------ -->
+                <div class="col">
+                    <h4>COVID-19</h4>
+                    <h1>
+                        Stay Home Stay
+                        <div class="highlight">Safe</div>
+                    </h1>
+                    <p>
+                        The Corona virus (COVID-19) was first reported in Wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.
+                    </p>
+                    <a href="#!" class="fill-btn">About Covid-19</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ About Corona ------------------------ -->
+    <section id="about-corona" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <!-- ----------------------- about-content ----------------------- -->
+                    <div class="about-content">
+                        <span class="title-highlight-red">
+                            About The Disease
+                        </span>
+                        <h2 class="subheading">
+                            Coronavirus COVID-19
+                        </h2>
+                        <b>
+                            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered
+                            coronavirus.
+                        </b>
+                        <br>
+                        <p>
+                            Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic
+                            respiratory disease, and cancer are more likely to develop serious illness.
+                            <br><br> The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an
+                            alcohol based rub frequently and not touching your face.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <!-- -------------------------- statics -------------------------- -->
+                    <div class="statics">
+                        <div class="virus"><img src="assets/images/virus.png" alt=""></div>
+                        <div class="total-cases">
+                            <span>802 748</span>
+                            <p>Confirmed cases</p>
+                        </div>
+                        <div class="data-info">
+                            <ul>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>32 019</span>
+                                        <p>Deaths</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>172 319</span>
+                                        <p>Recovered</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>203</span>
+                                        <p>countries, areas or territories with case</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- --------------------- about-transmission --------------------- -->
+    <section class="transmission">
+        <span class="title-highlight-blue">How Can It Spread </span>
+        <h1>Transmission Of COVID-19</h1>
+        <div class="row-three">
+            <div id="tans-01" class="col-three">
+                <span>01</span>
+                <h3>Contaminated Objects & Sustances</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div id="tans-02" class="col-three">
+                <span>02</span>
+                <h3>Air Transmission Of Droplets</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div id="tans-03" class="col-three">
+                <span>03</span>
+                <h3>Transmission Among Humans</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------- symptoms -------------------------- -->
+    <section id="symptoms" class="symptoms">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="title-highlight-red">What Are The</span>
+                <h2 class="subheading">
+                    Symptoms Of Coronavirus
+                </h2>
+            </div>
+            <div class="row">
+
+                <!-- ----------------------- symptoms-image ----------------------- -->
+                <div class="col">
+                    <img id="symptoms-image" src="assets/images/light_symptoms.png" alt="">
+                </div>
+
+                <!-- ---------------------- symptoms-content ---------------------- -->
+                <div class="col">
+                    <p>
+                        The COVID-19 virus affects different people in different ways. COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment. People who have underlying medical conditions
+                        and those over 60 years old have a higher risk of developing severe disease and death. </p>
+                    <div class="row">
+                        <div class="col">
+                            <b>Common symptoms include:</b>
+                            <ul>
+                                <li>fever</li>
+                                <li>tiredness</li>
+                                <li>dry cough</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <b>Other symptoms include:</b>
+                            <ul>
+                                <li>shortness of breath</li>
+                                <li>aches and pains</li>
+                                <li>sore throat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        People with mild symptoms who are otherwise healthy should self-isolate and contact their medical provider or a COVID-19 information line for advice on testing and referral.
+                        <br>
+                        <br> People with fever, cough or difficulty breathing should call their doctor and seek medical attention.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------- Prevention & Advice -------------------- -->
+    <section class="transmission" id="symptoms-trans">
+        <span class="title-highlight-blue">How To Protect Yours</span>
+        <h1>Prevention & Advice</h1>
+        <div class="row-three">
+            <div class="col-three">
+                <img id="advice-img-01" src="assets/images/light_01.svg" alt="">
+                <h3 id="advice-text-01">Wash Your Hands</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="col-three">
+                <img id="advice-img-02" src="assets/images/light_02.svg" alt="">
+                <h3 id="advice-text-02">Wear A Mask</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="col-three">
+                <img id="advice-img-03" src="assets/images/light_03.svg" alt="">
+                <h3 id="advice-text-03">Disinfect Frequently</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------- section-protect ---------------------- -->
+    <section id="protect-yourself" class="protect">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="title-highlight-red">How To Protect Yours</span>
+                <h2>
+                    Take Steps To Protect Yourself
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        Clean Your Hands Often </h3>
+                    <ul>
+                        <li>
+                            <div class="inlineHighlight">Wash your hands</div> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.
+                            <br><br>
+                        </li>
+                        <li>If soap and water are not readily available,
+                            <div class="inlineHighlight">use a hand sanitizer that contains at least 60% alcohol</div>
+                            Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                        <br>
+                        <li>
+                            <div class="inlineHighlight">Avoid touching your eyes, nose, and mouth</div> with unwashed hands.
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img id="protect-image-right" class="protect-right-img" src="assets/images/protect.png" alt="">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 8%;">
+                <img id="protect-image-left" class="protect-left-img" src="assets/images/contact.png" alt="">
+
+                <div class="col">
+                    <h3>
+                        Avoid Close Contact </h3>
+                    <ul>
+                        <li>
+                            <div class="inlineHighlight">Avoid close contact</div> with people who are sick
+                        </li>
+                        <br>
+                        <li>
+                            Put
+                            <div class="inlineHighlight">distance between yourself and other people</div> if COVID-19 is spreading in your community. This is especially important for people who are at higher risk of getting very sick.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- ----------------------- Protect Others ----------------------- -->
+    <section id="protect-others" class="transmission">
+        <span class="title-highlight-blue">How To Protect Others</span>
+        <h1>Take Steps To Protects Others</h1>
+        <div class="row-three">
+            <div class="col-three">
+                <img id="protect-img-01" src="assets/images/light_protect_01.svg" alt="">
+                <h3 id="protect-text-01">Stay Home</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="col-three">
+                <img id="protect-img-02" src="assets/images/light_protect_02.svg" alt="">
+                <h3 id="protect-text-02">Cover Coughs</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="col-three">
+                <img id="protect-img-03" src="assets/images/light_protect_03.svg" alt="">
+                <h3 id="protect-text-03">Disinfect Frequently</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ section-new ------------------------ -->
+    <section id="new" class="new">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="title-highlight-red">COVID-19 Coronavirus</span>
+                <h2>
+                    Corona Update News
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="new-img" src="assets/images/map.png" alt="">
+                </div>
+                <div class="col">
+                    <div class="statics">
+                        <div class="virus"><img src="assets/images/virus.png" alt=""></div>
+                        <div class="total-cases">
+                            <span>802 748</span>
+                            <p>Confirmed cases</p>
+                        </div>
+                        <div class="data-info">
+                            <ul>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>32 019</span>
+                                        <p>Deaths</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>172 319</span>
+                                        <p>Recovered</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>&#8226;</span>
+                                    <div class="number-stat">
+                                        <span>203</span>
+                                        <p>countries, areas or territories with case</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
+<!-- image pre-config based on the font -->
+<script>
+    resetImageSrc();
+</script>
+<!-- animations -->
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/main.js"></script>
