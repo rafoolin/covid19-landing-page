@@ -12,7 +12,8 @@ This project is deployed on [surge.sh](https://surge.sh/).
 
 # Screenshots
 
-This Project is available in dark and light
+This Project is available in dark and light.
+
 > click on images for a high resolution one.
 
 Dark:
