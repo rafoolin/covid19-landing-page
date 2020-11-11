@@ -1,0 +1,29 @@
+{
+  "name": "covid19-landing-page",
+  "version": "1.0.0",
+  "description": "a simple landing page for covid19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-rafoolin:rafoolin/covid19-landing-page.git"
+  },
+  "keywords": [
+    "covid19",
+    "corona",
+    "landing-page"
+  ],
+  "author": "Rafoolin",
+  "license": "MIT",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.21.7"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain covid19-landing-page.surge.sh"
+    }
+  }
+}
