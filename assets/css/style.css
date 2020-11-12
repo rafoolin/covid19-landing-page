@@ -147,6 +147,7 @@ a.fill-btn {
     background: var(--secondary);
     color: var(--onSecondary);
     width: 13vw;
+    min-width: 84px;
     font-size: var(--p-font-size);
     display: inline-block;
     text-align: center;
@@ -346,6 +347,7 @@ h2 {
 
 .logo img {
     width: 10vw;
+    min-width: 74px;
 }
 
 
