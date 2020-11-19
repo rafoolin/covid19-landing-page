@@ -1,5 +1,12 @@
+// Initialize the icon and images based on the theme
+document.addEventListener("DOMContentLoaded", () => {
+    resetIcon();
+    resetImageSrc();
+});
+
+
 /**
- * initialize theme
+ * Initialize theme
  */
 function initTheme() {
     var theme = localStorage.getItem('theme');
@@ -10,25 +17,36 @@ function initTheme() {
 
 
 /**
- * Switch theme Dark/Light
+ * Switch theme to Dark/Light
  */
 function switchTheme() {
     if (localStorage.getItem('theme') == 'light') {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        // theme icon set moon
-        document.getElementById("theme-icon").className = "fa fa-moon-o";
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+    }
+    resetImageSrc();
+    resetIcon();
+}
+
+
+/**
+ * Switch theme Icon based on the Dark/Light theme
+ */
+function resetIcon() {
+    if (localStorage.getItem('theme') == 'dark') {
+        // theme icon set moon
+        document.getElementById("theme-icon").className = "fa fa-moon-o";
+    } else {
         // theme icon
         document.getElementById("theme-icon").className = "fa fa-sun-o";
     }
-    resetImageSrc();
 }
 
 /**
- * Re-config image src for dark/light images
+ * Re-config image src based on the dark/light theme
  */
 function resetImageSrc() {
     // change img src
